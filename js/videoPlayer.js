@@ -13,19 +13,7 @@ var video,
 	lastVal = 100;
 
 window.onload = initialise();
-// function isIE() {
-
-
-// }
-
 function initialise() {
-	// 	if (isIE() < 9) {
-	//  // IE8 code
-	// document.getElementsByClassName("other")[0].style.display = "none";
-	//  document.getElementsByClassName("info")[0].style.display = "block";
-
-	// } else {
-	// Other versions IE or not IE
 	video = document.getElementById("Video1");
 	buttonPlay = document.getElementById("play");
 	buttonbar = document.getElementsByClassName('buttonbar')[0];
@@ -130,7 +118,6 @@ function vidVolSeek() {
 
 //function for toggling fullscreen
 function toggleFullScreen() {
-	console.log('hello');
 	if (flag === false) {
 		if (video.requestFullScreen) {
 			video.requestFullScreen();
